@@ -1,9 +1,11 @@
+import About from "./Components/About/About";
+import Campus from "./Components/Campus/Campus";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Programs from "./Components/Programs/Programs";
 import Title from "./Components/Title/Title";
 
-
+// 1:18
 const App = () => {
   return (
     <div>
@@ -12,6 +14,9 @@ const App = () => {
       <div className="container">
         <Title subTitle="Our PROGRAM" title="What We Offer" />
         <Programs />
+        <About />
+        <Title subTitle="Gallery" title="Capus Photos" />
+        <Campus/>
       </div>
     </div>
   );

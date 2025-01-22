@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './Navbar.css';
 
 
@@ -5,9 +6,28 @@ import {Book } from 'phosphor-react'
 
 
 const Navbar = () => {
+
+  const [sticky, setSticky] = useState(false);
+
+  // useEffect(() => {
+  //   window.addEventListener('scroll', () => {
+  //     if (window.scrollY > 100) {
+  //       setSticky(true);
+  //     } else {
+  //       setSticky(false);
+  //     }
+  //   })
+  // }, [])
+
+
+  useEffect(() => {
+    window.addEventListener('scroll', ()=> {
+      window.scrollY > 50 ? setSticky(true) : setSticky(false)
+    })
+  }, [])
+
   return (
-    <nav className='container'>
-      {/* <img  src={<Book />} /> */}
+    <nav className={`container ${sticky? 'dark-nav' : ''}`}>
       <Book className='logo' size={52} />
 
       <ul>

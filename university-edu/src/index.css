@@ -39,3 +39,8 @@ a{
   gap: 0.75rem;
 }
 
+.btn.dark-btn{
+  background: #212ea0;
+  color: #fff;
+}
+
