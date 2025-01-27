@@ -1,5 +1,6 @@
 import About from "./Components/About/About";
 import Campus from "./Components/Campus/Campus";
+import Contact from "./Components/Contact/Contact";
 import Hero from "./Components/Hero/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Programs from "./Components/Programs/Programs";
@@ -7,6 +8,7 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Title from "./Components/Title/Title";
 
 // 1:46:00
+//https://github.com/codewithadityaa/React-CollegeDemo-Website/tree/main
 const App = () => {
   return (
     <div>
@@ -16,11 +18,12 @@ const App = () => {
         <Title subTitle="Our PROGRAM" title="What We Offer" />
         <Programs />
         <About />
-        <Title subTitle="Gallery" title="Capus Photos" />
+        <Title subTitle="Gallery" title="Campus Photos" />
         <Campus/>
         <Title subTitle="TESTIMONIALS" title="What Student Says" />
         <Testimonials />
         <Title subTitle="Contact Us" title="Get In Touch" />
+        <Contact/>
 
       </div>
     </div>
