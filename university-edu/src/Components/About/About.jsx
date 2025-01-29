@@ -1,7 +1,7 @@
 import { PlayCircle } from "phosphor-react";
 import "./About.css";
 
-const About = () => {
+const About = ({setPlayState}) => {
   return (
     <div className="about">
       <div className="about-left">
@@ -10,7 +10,9 @@ const About = () => {
           alt="Students Image"
           className="about-img"
         />
-        <PlayCircle size={32} className="play-icon" />
+
+        <PlayCircle size={32} className="play-icon" onClick={() => {setPlayState(true)}}/>
+          
       </div>
       <div className="about-right">
         <h3>ABOUT UNIVERSITY</h3>
